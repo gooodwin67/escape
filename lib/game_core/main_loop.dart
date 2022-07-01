@@ -22,7 +22,6 @@ void mainLoop(SendPort sendPort) async {
     }
 
     if (_timerWatch.elapsedMilliseconds > _second) {
-      print(_updates);
       _updates = 0;
       _timerWatch.reset();
     }
